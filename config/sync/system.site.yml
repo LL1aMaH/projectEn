@@ -1,0 +1,14 @@
+uuid: c22fa161-bf08-4812-b3db-6a718d75a204
+name: ProjectEn
+mail: LLIaMaH-He@yandex.ru
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

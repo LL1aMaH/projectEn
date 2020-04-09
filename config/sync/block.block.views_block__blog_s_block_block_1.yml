@@ -1,0 +1,30 @@
+uuid: 9659e976-ea92-487f-98e3-e655e38f0736
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.blog_s_block
+  module:
+    - system
+    - views
+  theme:
+    - projectEn
+id: views_block__blog_s_block_block_1
+theme: projectEn
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:blog_s_block-block_1'
+settings:
+  id: 'views_block:blog_s_block-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

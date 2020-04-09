@@ -1,0 +1,8 @@
+uuid: b2384001-9e0b-4ae4-b6ab-a461f5825e2e
+langcode: en
+status: true
+dependencies: {  }
+name: Capacity
+vid: capacity
+description: ''
+weight: 0

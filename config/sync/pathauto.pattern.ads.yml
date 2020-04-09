@@ -1,0 +1,22 @@
+uuid: 049a2b8a-a355-4f69-9ba7-2eb6e28a3cfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ads
+label: Ads
+type: 'canonical_entities:node'
+pattern: 'ads/[node:title]'
+selection_criteria:
+  c86553e5-233b-4707-8fb7-6d12f5fd3da2:
+    id: node_type
+    bundles:
+      ads: ads
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c86553e5-233b-4707-8fb7-6d12f5fd3da2
+selection_logic: and
+weight: -5
+relationships: {  }

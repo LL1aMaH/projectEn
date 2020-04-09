@@ -1,0 +1,31 @@
+uuid: 8e70359f-05a3-46fe-9caf-df15ca3cf3b4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_with_video:baa5a9c2-c81f-4389-a62f-3b75b0a65ffc'
+  module:
+    - block_content
+    - system
+  theme:
+    - projectEn
+id: youtubesvideo
+theme: projectEn
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:baa5a9c2-c81f-4389-a62f-3b75b0a65ffc'
+settings:
+  id: 'block_content:baa5a9c2-c81f-4389-a62f-3b75b0a65ffc'
+  label: 'YouTube''s video'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

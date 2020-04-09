@@ -1,0 +1,8 @@
+uuid: d8d90ad7-f65d-4e40-ad3b-e27b8ee6284f
+langcode: en
+status: true
+dependencies: {  }
+name: 'fuel type'
+vid: fuel_type
+description: ''
+weight: 0

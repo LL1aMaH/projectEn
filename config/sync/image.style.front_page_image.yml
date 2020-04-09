@@ -1,0 +1,15 @@
+uuid: 18ac8f19-aaae-4110-baac-04937a66edb1
+langcode: en
+status: true
+dependencies: {  }
+name: front_page_image
+label: front_page_image
+effects:
+  c2017cfc-6437-44ce-82a9-b2d3e2166cc6:
+    uuid: c2017cfc-6437-44ce-82a9-b2d3e2166cc6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 250
+      anchor: center-center

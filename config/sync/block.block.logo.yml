@@ -1,0 +1,25 @@
+uuid: 25b6d627-596f-4cc1-9c00-0a0cf6f8bd28
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1b96717b-1466-4925-a381-139baf91ae5a'
+  module:
+    - block_content
+  theme:
+    - projectEn
+id: logo
+theme: projectEn
+region: navigation
+weight: -5
+provider: null
+plugin: 'block_content:1b96717b-1466-4925-a381-139baf91ae5a'
+settings:
+  id: 'block_content:1b96717b-1466-4925-a381-139baf91ae5a'
+  label: logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

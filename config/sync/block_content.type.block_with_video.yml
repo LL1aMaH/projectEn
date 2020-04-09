@@ -1,0 +1,8 @@
+uuid: f07263c5-58c5-4c00-9352-c90a9f690df4
+langcode: en
+status: true
+dependencies: {  }
+id: block_with_video
+label: block_with_video
+revision: 0
+description: ''

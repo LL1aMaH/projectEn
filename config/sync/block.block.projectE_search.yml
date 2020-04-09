@@ -1,0 +1,22 @@
+uuid: c22d76a2-2dd2-4a8f-baa5-341964a853cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - projectE
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: projectE_search
+theme: projectE
+region: navigation_collapsible
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

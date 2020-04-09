@@ -414,6 +414,8 @@ article.blog-post.full.clearfix {
 
 
 #block-youtubesvideo {
+  padding-right: 7%;
+  padding-left: 7%;
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
@@ -443,5 +445,12 @@ article.blog-post.full.clearfix {
         border: 2px solid #0a6eb4;
       }
     }
+  }
+}
+
+@media (max-width: 992px) {
+  #block-youtubesvideo {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

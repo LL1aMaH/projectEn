@@ -1,0 +1,15 @@
+uuid: f4e1945a-3567-4538-95a1-1fdd81b788e8
+langcode: en
+status: true
+dependencies: {  }
+id: moder
+label: Moder
+weight: 3
+is_admin: null
+permissions:
+  - 'administer comments'
+  - 'create ads content'
+  - 'create article content'
+  - 'create blog_post content'
+  - 'create news content'
+  - 'edit own comments'

@@ -1,0 +1,20 @@
+uuid: b24b3913-9d9a-4717-935c-917cb10bca57
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_transmission
+field_name: field_transmission
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

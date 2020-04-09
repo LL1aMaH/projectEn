@@ -1,0 +1,136 @@
+uuid: 3bc2e24a-fefe-48f9-84e4-934f22bbcdd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.ads.body
+    - field.field.node.ads.field_ads_photo
+    - field.field.node.ads.field_comments
+    - field.field.node.ads.field_fuel_type
+    - field.field.node.ads.field_model
+    - field.field.node.ads.field_price
+    - field.field.node.ads.field_transmission
+    - image.style.flexslider_full
+    - node.type.ads
+  module:
+    - comment
+    - ds
+    - flexslider_fields
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      library: ds/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - field_ads_photo
+      left:
+        - body
+      right:
+        - field_model
+        - field_transmission
+        - field_fuel_type
+        - field_price
+      footer:
+        - node_author
+        - node_post_date
+        - field_comments
+    fields:
+      node_author:
+        plugin_id: node_author
+        weight: 6
+        label: hidden
+        formatter: author_linked
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 7
+        label: hidden
+        formatter: ds_post_date_long
+id: node.ads.default
+targetEntityType: node
+bundle: ads
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: left
+  field_ads_photo:
+    weight: 0
+    label: visually_hidden
+    settings:
+      optionset: flexslider_default_thumbnail_captions
+      image_style: flexslider_full
+      image_link: ''
+      caption: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: flexslider
+    region: header
+  field_comments:
+    weight: 8
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: footer
+  field_fuel_type:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: right
+  field_model:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: right
+  field_price:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: right
+  field_transmission:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: right
+hidden:
+  links: true
